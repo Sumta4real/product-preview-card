@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(fonts/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Montserrat-medium';
+    src: url(fonts/Montserrat-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url(fonts/Fraunces_144pt-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+body{
+    width: 100%;
+    max-width: 375px;
+    box-sizing: border-box;
+    background-color:hsl(30, 38%, 92%) ;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem auto;
+}
+.perfume{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding-bottom: 2rem;
+}
+.content-container{
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+.perfume-image{
+    max-width: 375px;
+}
+.product-name{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-family: 'Montserrat-medium';
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 0;
+}
+.perfume-name {
+    margin-top: 0.5rem;
+    font-family: 'Fraunces'; 
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.perfume-description{
+    color: hsl(228, 12%, 48%); 
+    font-size: 1rem;
+    font-family: 'Montserrat-medium';
+    margin-top: 0;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.discount-price{
+    font-family: 'Fraunces', serif; 
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+}
+.original-price{
+    text-decoration: line-through;
+    font-family: 'Montserrat-medium';
+    padding-top: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+}
+button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat-bold' ;
+    font-size: 1rem;
+    width: 90%;
+}
+@media (min-width:375px) {
+    .perfume-image{
+        content: url('images/image-product-desktop.jpg');
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    .perfume{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 0;
+        padding-right: 2rem;
+    }
+}
